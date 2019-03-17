@@ -48,15 +48,15 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx="leo.20180902120523.10">## CMSimfly Collaborative Product Design
 
 ### KMOLab
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [2019cdb Group1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[CMSimfly Website](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1)
 
 
 </t>
