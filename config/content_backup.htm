@@ -25,7 +25,8 @@
 <p style="text-align: left;"><span>⦿</span>Slideshow  </p>
 <p style="text-align: left;"><span>40623212  魏有泉、</span><span>40623211  王得榮</span></p>
 <p style="text-align: left;"><span>⦿</span>Report         </p>
-<p style="text-align: left;"><span>40623211  王得榮</span></p><h1>Directory Structure</h1>
+<p style="text-align: left;"><span>40623211  王得榮</span></p>
+<h1>Directory Structure</h1>
 <p>第二位想要編輯這裡</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/9A-hg32eD-s" width="560"></iframe></p>
 <p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 Beatifulsoup 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
@@ -34,7 +35,7 @@
 <p>static 目錄則存放在動態與靜態系統所需要的 Javascript 或 Brython 程式檔.</p>
 <p>還有這裡</p>
 <p>首先修改這裡</p>
-<h1>Onshap</h1>
+<h1>Onshape</h1>
 <h2>Process</h2>
 <p>一開始用Inventor畫草圖，設計出大概的樣子。</p>
 <p><img alt="" height="397" src="/images/p37_18-45-58.png" width="800"/></p>
@@ -50,10 +51,84 @@
 <p><img alt="" height="390" src="/images/chrome_u81tucUdEQ.png" width="800"/></p>
 <p><img alt="" height="390" src="/images/chrome_LcEHrY2Lsl.png" width="800"/></p>
 <p><img alt="" height="390" src="/images/chrome_3rY23gORHw.png" width="800"/></p>
-<p><img alt="" height="390" src="/images/Foosball.png" width="800"/></p><h2>Finish</h2>
+<p><img alt="" height="390" src="/images/Foosball.png" width="800"/></p>
+<h2>Complete</h2>
 <p><a href="https://cad.onshape.com/documents/f30f0cd8b9dc8ca3ed4382c3/w/0a449a9e4794341cffde87a0/e/93676ac54a40f293a85fc29b">Table Football</a></p>
-<p><img alt="" height="390" src="/images/Foosball.gif" width="800"/></p><h1>V-rep</h1>
-<h1>Experience</h1>
+<p><img alt="" height="390" src="/images/Foosball.gif" width="800"/></p>
+<h1>V-rep</h1>
+<h2>BobbleRob</h2>
+<p><img alt="" height="429" src="/images/2019-04-01_23-32-24.gif" width="800"/></p>
+<h3>Tutorial</h3>
+<p>A. Add a primitive sphere</p>
+<p>1. Add a primitive sphere to the scene with [Menu bar --&gt; Add --&gt; Primitive shape --&gt; Sphere]</p>
+<p><img alt="" height="393" src="/images/p37_09-48-54.png" width="800"/></p>
+<p><span>2. Diameter 0.2, adjust the X-size item to 0.2, then click OK. </span></p>
+<p><span><img alt="" height="628" src="/images/p37_09-57-52.png" width="800"/></span></p>
+<p><span>3. Enable Collidable, Measurable, Renderable and Detectable in the object common properties for that shape.</span></p>
+<p><span><img alt="" height="429" src="/images/p37_19-13-52.png" width="800"/></span></p>
+<p>4. Click the sphere representing BubbleRob's body.</p>
+<p>5. Click translation tab and enter 0.02 for Along Z.</p>
+<p>6. Click Translate selection so that all selected objects by 2 cm along the absolute Z-axis.</p>
+<p><img alt="" height="429" src="/images/p37_19-14-52.png" width="800"/></p>
+<p>7. Double-click the sphere's name, edit and enter bubbleRob and press enter.</p>
+<p>B. Add a proximity sensor</p>
+<p>1. Select [Menu bar --&gt; Add --&gt; Proximity sensor --&gt; Cone type]</p>
+<p><span><img alt="" height="393" src="/images/p37_19-20-48.png" width="800"/></span></p>
+<p><span>2.  In the orientation dialog on the orientation tab, we enter 90 for Around Y and for Around Z, then click Rotate selection.</span></p>
+<p><span><img alt="" height="429" src="/images/p37_19-25-16.png" width="800"/></span></p>
+<p><span>3. In the position dialog, on the position tab, we enter 0.1 for X-coord. and 0.12 for Z-coord.</span></p>
+<p><span><img alt="" height="429" src="/images/p37_19-27-24.png" width="800"/></span></p>
+<p>4. Double-click the proximity sensor's icon in the scene hierarchy to open its properties dialog.</p>
+<p>5. Click Show volume parameter to open the proximity sensor volume dialog.</p>
+<p>6. Adjust items Offset to 0.005, Angle to 30 and Range to 0.15.</p>
+<p><img alt="" height="429" src="/images/p37_19-37-18.png" width="800"/></p>
+<p>7. Click Show detection parameters in the proximity sensor properties, opens the proximity sensor detection parameter dialog.</p>
+<p>8. Uncheck item Don't allow detections if distance smaller than then close that dialog again.</p>
+<p><img caption="false" height="429" src="/images/p37_21-24-12.png" width="800"/></p>
+<p>9. Double-click the proximity sensor's name, edit and enter bubbleRob_sensingNose and press enter.</p>
+<p>C. Attaches the sensor to the body of the robot</p>
+<p>1. Select bubbleRob_sensingNose, then control-select bubbleRob</p>
+<p>2. Click [Menu bar --&gt; Edit --&gt; Make last selected object parent]</p>
+<p>1. + 2. =&gt; Can also drag bubbleRob_sensingNose onto bubbleRob in the scene hierarchy.</p>
+<p><img alt="" height="429" src="/images/p37_21-37-27.png" width="800"/></p>
+<p>D. Add BubbleRob's wheels</p>
+<p>1. Add a pure primitive cylinder with [Menu bar --&gt; Add --&gt; Primitive shape --&gt; Cylinder]</p>
+<p><img alt="" height="429" src="/images/p37_21-42-55.png" width="800"/></p>
+<p>2. Dimensions (0.08,0.08,0.02)</p>
+<p><img alt="" height="429" src="/images/p37_21-44-08.png" width="800"/></p>
+<p>3. Enable Collidable, Measurable, Renderable and Detectable in the object common properties for that cylinder.</p>
+<p><img alt="" height="429" src="/images/p37_21-46-19.png" width="800"/></p>
+<p>4. Set the cylinder's absolute position to (0.05,0.1,0.04)</p>
+<p>5. A<span>bsolute orientation to (-90,0,0)</span></p>
+<p><span>6. Change the name to <em>bubbleRob_leftWheel</em></span></p>
+<p><span>7. Copy and paste the wheel</span></p>
+<p><span>8. Set the absolute Y coordinate of the copy to -0.1</span></p>
+<p><img alt="" height="429" src="/images/p37_22-00-18.png" width="800"/></p>
+<p>9. R<span>ename the copy to </span><em>bubbleRob_rightWheel</em></p>
+<p>E. A<span>dd </span><a href="http://www.coppeliarobotics.com/helpFiles/en/joints.htm">j</a>oints<span><span> </span>(or motors) for the wheels</span></p>
+<p><span>1. Click [Menu bar --&gt; Add --&gt; Joint --&gt; Revolute] to add a revolute joint to the scene </span></p>
+<p><img alt="" height="429" src="/images/p37_22-01-45.png" width="800"/></p>
+<p>2. <span>Keep the joint selected, then control-select </span><em>bubbleRob_leftWheel</em></p>
+<p>3.  In the position dialog, on the position tab, we click the Apply to selection button: this positioned the joint at the center of the left wheel.</p>
+<p><img alt="" height="429" src="/images/p37_22-11-38.png" width="800"/></p>
+<p>4. In the orientation dialog, on the orientation tab, we do the same: this oriented the joint in the same way as the left wheel.</p>
+<p><img alt="" height="429" src="/images/p37_22-12-56.png" width="800"/></p>
+<p>5. Rename the joint to bubbleRob_leftMotor</p>
+<p>6. Double-click the joint's icon in the scene hierarchy to open the joint properties dialog.</p>
+<p>7. click Show dynamic parameters to open the joint dynamics propertiesdialog.</p>
+<p>8. Enable the motor, and check item Lock motor when target velocity is zero.</p>
+<p><img alt="" height="429" src="/images/p37_22-39-26.png" width="800"/></p>
+<p>9. Repeat the same procedure for the right motor and rename it to bubbleRob_rightMotor.</p>
+<p><img alt="" height="429" src="/images/p37_22-43-48.png" width="800"/></p>
+<p><img alt="" height="429" src="/images/p37_22-45-04.png" width="800"/></p>
+<p><img alt="" height="429" src="/images/p37_22-56-27.png" width="800"/></p>
+<p>10. Attach the left wheel to the left motor.</p>
+<p><span>11. Attach </span>the right wheel to the right motor.</p>
+<p>12. Attach the two motors to bubbleRob.</p>
+<p><span></span></p>
+<p></p>
+<p></p>
+<p></p><h1>Experience</h1>
 <h2>40623203</h2>
 <h3>week1 - 03</h3>
 <h3>week2 - 03</h3>
@@ -322,8 +397,9 @@
 <td style="text-align: center; width: 45px;"></td>
 </tr>
 </tbody>
-</table><h1>Q and A</h1>
-<p>1.  Q為何更改完之後SAVE檔案會不見只剩1個PAGE?</p>
-<p>     A:有些字元無法被讀取，讓系統無法偵測到進而變成亂碼讓網站整個壞掉。</p>
-<p>     解決方法:可以重新CLONE一次然後從還沒改之前再去做就可以了。</p>
+</table>
+<h1>Q and A</h1>
+<p>1.  Q：為何更改完之後SAVE檔案會不見只剩1個PAGE?</p>
+<p>     A：有些字元無法被讀取，讓系統無法偵測到進而變成亂碼讓網站整個壞掉。</p>
+<p>     解決方法：可以重新CLONE一次然後從還沒改之前再去做就可以了。</p>
 <p></p>
