@@ -129,7 +129,129 @@
 <p>10. Attach the left wheel to the left motor.</p>
 <p><span>11. Attach </span>the right wheel to the right motor.</p>
 <p>12. Attach the two motors to bubbleRob.</p>
-<h1>Experience</h1>
+<p>F. Add a small slider (or caster)</p>
+<p>1. Add a pure primitive sphere with diameter 0.05</p>
+<p>2. E<span>nter -0.07 for X-coord</span></p>
+<p><img alt="" height="481" src="/images/p37_14-06-37.png" width="800"/></p>
+<p>3. Click the sphere Collidable, Measurable, Renderable and Detectable</p>
+<p><img alt="" height="481" src="/images/p37_13-49-21.png" width="800"/></p>
+<p>4. Rename it to bubbleRob_slider</p>
+<p>5. Set the Material to noFrictionMaterial in the shape dynamics properties</p>
+<p>G. Add a force sensor</p>
+<p>1. <span>Click [Menu bar --&gt; Add --&gt; Joint --&gt; Revolute] to add  a force sensor</span></p>
+<p><span><img alt="" height="481" src="/images/p37_13-52-06.png" width="800"/></span></p>
+<p>2. Rename it to bubbleRob_connection</p>
+<p>3. E<span>nter -0.07 for X-coord, 0.05<span>for Z-coord</span></span></p>
+<p><span><span><img alt="" height="481" src="/images/p37_14-16-30.png" width="800"/></span></span></p>
+<p>4. Attach it to the robot body</p>
+<p><img alt="" height="481" src="/images/p37_14-24-01.png" width="800"/></p>
+<p>H. Avoid bubbleRob_slider and bubbleRob colliding with each other</p>
+<p>1. In the shape dynamics properties, for bubbleRob_slider we set the local respondable mask to 00001111</p>
+<p><img alt="" height="481" src="/images/p37_14-26-07.png" width="800"/></p>
+<p>2. For bubbleRob, we set the local respondable mask to 11110000</p>
+<p><img alt="" height="481" src="/images/p37_14-27-42.png" width="800"/></p>
+<p>I. Stability of dynamic simulations is tightly linked to masses and inertias of the involved non-static shapes.</p>
+<p>1. Select the two wheels and the slider, and in the shape dynamics dialog we click three times M=M*2 (for selection)</p>
+<p><img alt="" height="481" src="/images/p37_15-58-10.png" width="800"/></p>
+<p><img alt="" height="481" src="/images/p37_15-59-24.png" width="800"/></p>
+<p><img alt="" height="481" src="/images/p37_16-00-40.png" width="800"/></p>
+<p>2. All selected shapes will have their masses multiplied by 8</p>
+<p>3. Run the simulation again</p>
+<p>4. In the joint dynamics dialog, we set the Target velocity to 50 for both motors.</p>
+<p><img alt="" height="481" src="/images/p37_16-08-15.png" width="800"/></p>
+<p><img alt="" height="481" src="/images/p37_16-09-47.png" width="800"/></p>
+<p>J. Define a collection of objects that represent BubbleRob</p>
+<p>1. Click [Menu bar --&gt; Tools --&gt; Collections] to open the collection dialog or open the dialog by clicking the appropriate toolbar button</p>
+<p><img caption="false" height="100" src="/images/p37_22-24-11.png" width="100"/></p>
+<p>2. In the collection dialog, we click Add new collection.</p>
+<p>3. Select bubbleRob in the scene hierarchy</p>
+<p>4. Click Add in the collection dialog</p>
+<p>5. Collection is now defined as containing all objects of the hierarchy tree starting at the bubbleRob object (the collection's composition is displayed in the Composing elements and attributes section)</p>
+<p><img alt="" height="429" src="/images/p37_20-52-04.png" width="800"/></p>
+<p>6. To edit the collection name, we double-click it, and rename it to bubbleRob_collection. </p>
+<p>K. Track the minimum distance between BubbleRob and any other object</p>
+<p>1. Open the distance dialog with [Menu bar --&gt; Tools --&gt; Calculation module properties] or open the calculation module properties dialog with the appropriate toolbar button</p>
+<p><img alt="" height="100" src="/images/p37_22-31-56.png" width="100"/></p>
+<p>2. In the distance dialog, click Add new distance object and select a distance pair: [collection] bubbleRob_collection - all other measurable objects in the scene.</p>
+<p>3. Added a distance object that will measure the smallest distance between collection bubbleRob_collection (i.e. any measurable object in that collection) and any other measurable object in the scene.</p>
+<p><img alt="" height="429" src="/images/p37_22-01-42.png" width="800"/></p>
+<p>4. Rename the distance object to bubbleRob_distance with a double-click in its name</p>
+<p>L. Add a graph</p>
+<p>1. Click [Menu bar --&gt; Add --&gt; Graph]</p>
+<p><img alt="" height="429" src="/images/p37_22-10-45.png" width="800"/></p>
+<p>2. Rename it to bubbleRob_graph</p>
+<p>3. Attach the graph to bubbleRob</p>
+<p>4. Set the graph's absolute coordinates to (0,0,0.005)</p>
+<p><img alt="" height="429" src="/images/p37_22-18-50.png" width="800"/></p>
+<p>5. Open the graph properties dialog by double-clicking its icon in the scene hierarchy</p>
+<p>6. Uncheck Display XYZ-planes</p>
+<p>7. Click Add new data stream to record and select Object: absolute x-position for the Data stream type, and bubbleRob_graph for the Object / item to record</p>
+<p>8. Data stream of bubbleRob_graph's absolute x-coordinate (i.e. the bubbleRobGraph's object absolute x position will be recorded). </p>
+<p>9. Record the y and z positions: we add those data streams in a similar way as above.</p>
+<p>10. Click Add new data stream to record and select Distance: segment length for the Data stream type, and bubbleRob_distance for the Object / item to record</p>
+<p>11. In the Data stream recording list, we now rename Data to bubbleRob_x_pos, Data0 to bubbleRob_y_pos, Data1 to bubbleRob_z_pos, and Data2 to bubbleRob_obstacle_dist.</p>
+<p><img alt="" height="429" src="/images/p37_22-29-34.png" width="800"/></p>
+<p>12. Select bubbleRob_x_pos, bubbleRob_y_pos and bubbleRob_z_pos in the Data Stream recording list and in the Time graph properties section, uncheck Visible</p>
+<p><img alt="" height="429" src="/images/p37_22-31-23.png" width="800"/></p>
+<p>13. Only the bubbleRob_obstacle_dist data stream will be visible in a time graph</p>
+<p>14. Set-up a 3D curve that displays BubbleRob's trajectory</p>
+<p>15. Click Edit 3D curves to open the XY graph and 3D curve dialog</p>
+<p>16. Click Add new curve</p>
+<p>17. In the dialog that pops open, we select bubbleRob_x_pos for the X-value item, bubbleRob_y_pos for the Y-value item and bubbleRob_z_pos for the Z-value item.</p>
+<p><img alt="" height="429" src="/images/p37_22-34-28.png" width="800"/></p>
+<p>18. Rename the newly added curve from Curve to bubbleRob_path</p>
+<p>19. Check the Relative to world item and set Curve width to 4</p>
+<p><img alt="" height="429" src="/images/p37_22-35-45.png" width="800"/></p>
+<p>M. Add a pure primitive cylinder</p>
+<p>1. <span>Add a pure primitive cylinder with [Menu bar --&gt; Add --&gt; Primitive shape --&gt; Cylinder]</span></p>
+<p><img alt="" height="429" src="/images/p37_20-56-24.png" width="800"/></p>
+<p>2. Dimensions: (0.1, 0.1, 0.2)</p>
+<p>3. Click the object translation toolbar button</p>
+<p><img alt="" height="100" src="/images/p37_22-58-35.png" width="100"/></p>
+<p>4. Drag any point in the scene: the cylinder will follow the movement</p>
+<p>5. Copy and paste the cylinder a few times</p>
+<p>6. Move them to positions around BubbleRob (it is most convenient to perform that while looking at the scene from the top)</p>
+<p>7. During object shifting, holding down the shift key allows to perform smaller shift steps. Holding down the ctrl key allows to move in an orthogonal direction to the regular direction(s).</p>
+<p>8. Select the camera pan toolbar button</p>
+<p>N. Finish BubbleRob as a model definition</p>
+<p>1. Select the model base (i.e. object bubbleRob)</p>
+<p>2. Check items Object is model base and Object/model can transfer or accept DNA in the object common properties: there is now a stippled bounding box that encompasses all objects in the model hierarchy.</p>
+<p>3. Select the two joints, the proximity sensor and the graph, the proximity sensor and the graph</p>
+<p>4. Don't show as inside model selection and click Apply to selection</p>
+<p>5. The model bounding box now ignores the two joints and the proximity sensor</p>
+<p>6. Disable camera visibility layer 2</p>
+<p>7. Enable camera visibility layer 10 for the two joints and the force sensor</p>
+<p>8. This effectively hides the two joints and the force sensor, since layers 9-16 are disabled by default</p>
+<p>9. Select the vision sensor, the two wheels, the slider, and the graph</p>
+<p>10. Select base of model instead</p>
+<p>O. Add a vision sensor</p>
+<p>1. Click [Menu bar --&gt; Add --&gt; Vision sensor --&gt; Perspective type]</p>
+<p><img alt="" height="429" src="/images/p37_22-21-26.png" width="800"/></p>
+<p>2. Attach the vision sensor to the proximity sensor</p>
+<p>3. Set the local position and orientation of the vision sensor to (0,0,0)</p>
+<p><img alt="" height="429" src="/images/p37_22-40-15.png" width="800"/></p>
+<p>4. Open its properties dialog</p>
+<p>5. Set the Far clipping plane item to 1, and the Resolution x and Resolution y items to 256 and 256</p>
+<p><img alt="" height="429" src="/images/p37_22-44-24.png" width="800"/></p>
+<p>6. Open the vision sensor filter dialog by clicking Show filter dialog</p>
+<p>7. Select the filter component Edge detection on work image and click Add filter</p>
+<p>8. Position the newly added filter in second position (one position up, using the up button)</p>
+<p><img alt="" height="429" src="/images/p37_22-49-18.png" width="800"/></p>
+<p>9. Double-click the newly added filter component and adjust its Threshold item to 0.2, then click OK</p>
+<p><img alt="" height="429" src="/images/p37_22-51-31.png" width="800"/></p>
+<p>P. Add a floating view to the scene,</p>
+<p>1. Right-click [Popup menu --&gt; View --&gt; Associate view with selected vision sensor] (we make sure the vision sensor is selected during that process)</p>
+<p><img alt="" height="429" src="/images/p37_23-04-13.png" width="800"/></p>
+<p><img alt="" height="429" src="/images/p37_23-05-22.png" width="800"/></p>
+<p>Q. Add a small child script that will control BubbleRob's behavior</p>
+<p>1. Click [Menu bar --&gt; Add --&gt; Associated child script --&gt; Non threaded]</p>
+<p><img alt="" height="429" src="/images/p37_23-07-29.png" width="800"/></p>
+<p>2. Opened with [Menu bar --&gt; Tools --&gt; Scripts] or through the appropriate toolbar button.</p>
+<p><img alt="" height="100" src="/images/p37_23-31-15.png" width="100"/></p>
+<p>3. Double-click the little script icon that appeared next to bubbleRob's name in the scene hierarchy</p>
+<p>4. Copy and paste following code into the script editor</p>
+<p><img alt="" height="429" src="/images/p37_23-34-40.png" width="800"/></p>
+<p>Finish</p><h1>Experience</h1>
 <h2>40623203</h2>
 <h3>week1 - 03</h3>
 <h3>week2 - 03</h3>
@@ -222,7 +344,7 @@
 <p>這學期新教了一個東西較ungit，這個東西相較於之前的新增和資料的推送有點不太一樣，ungit可以很簡單也很快速地將東西傳送到倉儲裡面，也可以將資料做樹狀圖的方式合併，ungit也不一定要開github內的commit來確認有無推送至倉儲內，雖然看起來很方便但還是要看自己比較習慣使用哪個才是最重要的。</p><h3>week4 - 33</h3>
 <p>這次的分組是由老師隨機分組，分完組後並自己架設網站和討論如何做出手足球和進行v-rep模擬，之前對v-rep還不是很了解和也只有稍微碰一下而已，藉由這次的手足球來加以練習這個模擬軟體，最重要的是v-rep都是英文所以操作起來不是很順利和熟練，所以必須要再加以練習才行。</p><h3>week5 - 33</h3>
 <p>分配組員大致上的工作並討論要如何製作手足球。</p><h3>week6 - 33</h3>
-<h3>week7 - 33</h3>
+<p>這練習<span>BubbleRob tutorial的v-rep模擬，剛開始在座的時候還不是那麼的熟悉，但是至少有操作流程但沒想到都是英文，所以在操作過程中要一直查單字，而且在操作過程中還會一直操作錯誤，主要的原因還是因為有些敘述看不太懂所以才會一直做錯，但是也藉由這次的練習讓我增加了一些英文的閱讀能力，以及還有很多東西需要花時間研究才行。</span></p><h3>week7 - 33</h3>
 <h3>week8 - 33</h3>
 <h3>week9 - 33</h3>
 <h2>40623240</h2>
