@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2"/>
-<globals/>
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -61,8 +64,8 @@
 <v t="amd.20160714230058.1"><vh>@clean wsgi.py</vh>
 <v t="amd.20160714230122.1"><vh>wsgi declarations</vh></v>
 </v>
-<v t="amd.20160714230833.1"><vh>編輯 flaskapp.py</vh>
-<v t="amd.20160714230833.2"><vh>@clean flaskapp.py</vh>
+<v t="amd.20160714230833.1" a="E"><vh>編輯 flaskapp.py</vh>
+<v t="amd.20160714230833.2" a="E"><vh>@clean flaskapp.py</vh>
 <v t="amd.20160714230833.3"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="amd.20160714230833.4"><vh>&lt;&lt;registers&gt;&gt;</vh></v>
 <v t="amd.20160714233131.1"><vh>checkLogin</vh></v>
@@ -957,6 +960,11 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;script src="https://scrum-3.github.io/web/brython/brython.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"&gt;&lt;/script&gt;
 --&gt;
+&lt;style&gt;
+img {
+    border:2px solid blue;
+}
+&lt;/style&gt;
 '''
 
 
@@ -2530,6 +2538,11 @@ init_mathjax();
 &lt;script src="https://scrum-3.github.io/web/brython/brython.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"&gt;&lt;/script&gt;
 --&gt;
+&lt;style&gt;
+img {
+    border:2px solid blue;
+}
+&lt;/style&gt;
 '''
 
 
