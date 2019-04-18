@@ -21,22 +21,40 @@
 <v t="leo.20180902120523.6" a="E"><vh>body</vh>
 <v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
+<v t="leo.20190418185134.1" a="E"><vh>封面投影片</vh>
+<v t="leo.20190418185134.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190418185600.1" a="E"><vh>工作</vh>
+<v t="leo.20190418173439.2"><vh>任務</vh></v>
+</v>
+<v t="leo.20190418185634.1" a="E"><vh>W1-2</vh>
+<v t="leo.20190418173444.2"><vh>W1-W2課程</vh></v>
+</v>
+<v t="leo.20190418185636.1" a="E"><vh>W3</vh>
+<v t="leo.20190418173446.2"><vh>W3課程</vh></v>
+</v>
+<v t="leo.20190418185637.1" a="E"><vh>W4</vh>
+<v t="leo.20190418173447.2"><vh>W4課程</vh></v>
+</v>
+<v t="leo.20190418185639.1" a="E"><vh>W5</vh>
+<v t="leo.20190418173447.4"><vh>W5課程</vh></v>
+</v>
+<v t="leo.20190418185641.1" a="E"><vh>W6</vh>
+<v t="leo.20190418173448.2"><vh>W6課程</vh></v>
+</v>
+<v t="leo.20190418185642.1" a="E"><vh>W7</vh>
+<v t="leo.20180902120523.12"><vh>W7課程</vh></v>
+</v>
+<v t="leo.20190418185643.1" a="E"><vh>W8</vh>
+<v t="leo.20190418175950.2"><vh>W8課程</vh></v>
+</v>
+<v t="leo.20190418185643.3" a="E"><vh>W9</vh>
+<v t="leo.20190418175950.4"><vh>W9課程</vh></v>
 </v>
 <v t="leo.20190418180442.1" a="E"><vh>快捷鍵</vh>
-<v t="leo.20190418173439.2"><vh>任務</vh></v>
-<v t="leo.20190418173444.2"><vh>W1-W2課程</vh></v>
-<v t="leo.20190418173446.2"><vh>W3課程</vh></v>
-<v t="leo.20190418173447.2"><vh>W4課程</vh></v>
-<v t="leo.20190418173447.4"><vh>W5課程</vh></v>
-<v t="leo.20190418173448.2"><vh>W6課程</vh></v>
-<v t="leo.20180902120523.12"><vh>W7課程</vh></v>
-<v t="leo.20190418175950.2"><vh>W8課程</vh></v>
-<v t="leo.20190418175950.4"><vh>W9課程</vh></v>
 <v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20180902120523.13" a="E"><vh>各式內容引用範例</vh>
+<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
@@ -57,18 +75,6 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 2019 Spring協同產品設計實習
-
-### BG1
-
-&lt;small&gt;
-Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
-&lt;/small&gt;
-
-[BG1網誌](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1/blog/)
-
-
-</t>
 <t tx="leo.20180902120523.12"># Week7
 
 * 清明節
@@ -237,14 +243,6 @@ CMSimfly 網際內容管理
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-						
-</t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -398,6 +396,107 @@ vertical: body pane on the botton</t>
 * 按 b 或 . 鍵可以切換螢幕黑屏 (black)
 * 按 Esc 可以退出全螢幕或全域檢視 (Escape)
 
+</t>
+<t tx="leo.20190418185134.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+						
+</t>
+<t tx="leo.20190418185134.2">## 2019 Spring協同產品設計實習
+
+### BG1
+
+&lt;small&gt;
+Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
+&lt;/small&gt;
+
+[BG1網誌](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1/blog/)
+
+
+</t>
+<t tx="leo.20190418185600.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185634.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185636.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185637.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185639.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185641.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185642.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185643.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418185643.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 </tnodes>
 </leo_file>
