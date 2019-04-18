@@ -72,7 +72,9 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 <t tx="leo.20180902120523.12"># Week7
 
 * 清明節
-* 增設老師所要求的期中內容</t>
+* 增設老師所要求的期中內容
+
+</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -266,104 +268,7 @@ CMSimfly 網際內容管理
 &lt;/t&gt;
 &lt;/tnodes&gt;
 &lt;/leo_file&gt;
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
-&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
-&lt;leo_header file_format="2"/&gt;
-&lt;vnodes&gt;
-&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
-&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
-&lt;/v&gt;
-&lt;/vnodes&gt;
-&lt;tnodes&gt;
-&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
-    &amp;lt;script type="text/template"&amp;gt;
-@others
-    &amp;lt;/script&amp;gt;
-&amp;lt;/section&amp;gt;
 
-
-						
-&lt;/t&gt;
-&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-&lt;/t&gt;
-&lt;/tnodes&gt;
-&lt;/leo_file&gt;
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
-&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
-&lt;leo_header file_format="2"/&gt;
-&lt;vnodes&gt;
-&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
-&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
-&lt;/v&gt;
-&lt;/vnodes&gt;
-&lt;tnodes&gt;
-&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
-    &amp;lt;script type="text/template"&amp;gt;
-@others
-    &amp;lt;/script&amp;gt;
-&amp;lt;/section&amp;gt;
-
-
-						
-&lt;/t&gt;
-&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-&lt;/t&gt;
-&lt;/tnodes&gt;
-&lt;/leo_file&gt;
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
-&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
-&lt;leo_header file_format="2"/&gt;
-&lt;vnodes&gt;
-&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
-&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
-&lt;/v&gt;
-&lt;/vnodes&gt;
-&lt;tnodes&gt;
-&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
-    &amp;lt;script type="text/template"&amp;gt;
-@others
-    &amp;lt;/script&amp;gt;
-&amp;lt;/section&amp;gt;
-
-
-						
-&lt;/t&gt;
-&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-&lt;/t&gt;
-&lt;/tnodes&gt;
-&lt;/leo_file&gt;
-&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
 
 
 						
@@ -461,35 +366,48 @@ vertical: body pane on the botton</t>
 
 </t>
 <t tx="leo.20190418173444.2"># Week1-Week2
+
 * 從有限的網路資源下建立屬於自己的可攜系統
 * 因為第二週彈性放假，所以課程改至第一週星期五晚上6:30~9:50
 
 </t>
 <t tx="leo.20190418173446.2"># Week3
 
-* 學習如何使用ungit進行commit(可輸入中文)，且如何將不需要的commit撤除</t>
+* 學習如何使用ungit進行commit(可輸入中文)，且如何將不需要的commit撤除
+
+</t>
 <t tx="leo.20190418173447.2"># Week4
 
 * 第一階段手足球協同實習分組名單確認
-* 各組組長建立小組倉儲，且在組別倉儲增加README.md檔</t>
+* 各組組長建立小組倉儲，且在組別倉儲增加README.md檔
+
+</t>
 <t tx="leo.20190418173447.4"># Week5
 
 * Onshape繪製手足球模型
-* 使用V-rep進行老師要求的[bubbleRob]練習(http://mde.tw/cd2019/content/BubbleRob1.html)</t>
+* 使用V-rep進行老師要求的[bubbleRob]練習(http://mde.tw/cd2019/content/BubbleRob1.html)
+
+</t>
 <t tx="leo.20190418173448.2"># Week6
 
 * 網站新增V-rep的操作過程
-* bubbleRob模擬結束</t>
+* bubbleRob模擬結束
+
+</t>
 <t tx="leo.20190418175950.2"># Week8
 
-* V-rep模擬，進行[實習任務三](http://mde.tw/cd2019/content/%E5%AF%A6%E7%BF%92%E4%BB%BB%E5%8B%99%E4%B8%89.html)</t>
+* V-rep模擬，進行[實習任務三](http://mde.tw/cd2019/content/%E5%AF%A6%E7%BF%92%E4%BB%BB%E5%8B%99%E4%B8%89.html)
+
+</t>
 <t tx="leo.20190418175950.4"># Week9
 * 期中考
 * 學員期中報告影片錄製
 * 影片標題與說明
 * 學員填寫自評表單
 * 個人期中報告影片嵌入小組網頁
-* 學員口頭期中報告</t>
+* 學員口頭期中報告
+
+</t>
 <t tx="leo.20190418180442.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
