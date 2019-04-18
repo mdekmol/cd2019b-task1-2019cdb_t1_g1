@@ -24,10 +24,37 @@
 <v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20190418173439.1" a="E"><vh>任務分配</vh>
+<v t="leo.20190418173439.2"><vh>分配大綱</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
+<v t="leo.20190418173444.1" a="E"><vh>W1-W2</vh>
+<v t="leo.20190418173444.2"><vh>W1-W2課程</vh></v>
+</v>
+<v t="leo.20190418173446.1" a="E"><vh>W3</vh>
+<v t="leo.20190418173446.2"><vh>W3課程</vh></v>
+</v>
+<v t="leo.20190418173447.1" a="E"><vh>W4</vh>
+<v t="leo.20190418173447.2"><vh>W4課程</vh></v>
+</v>
+<v t="leo.20190418173447.3" a="E"><vh>W5</vh>
+<v t="leo.20190418173447.4"><vh>W5課程</vh></v>
+</v>
+<v t="leo.20190418173448.1" a="E"><vh>W6</vh>
+<v t="leo.20190418173448.2"><vh>W6課程</vh></v>
+</v>
+<v t="leo.20180902120523.11" a="E"><vh>W7</vh>
+<v t="leo.20180902120523.12"><vh>W7課程</vh></v>
+</v>
+<v t="leo.20190418175950.1" a="E"><vh>W8</vh>
+<v t="leo.20190418175950.2"><vh>W8課程</vh></v>
+</v>
+<v t="leo.20190418175950.3" a="E"><vh>W9</vh>
+<v t="leo.20190418175950.4"><vh>W9課程</vh></v>
+</v>
+<v t="leo.20190418180442.1"><vh>快捷鍵</vh>
+<v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20180902120523.13" a="E"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
@@ -48,15 +75,15 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly Collaborative Product Design
+<t tx="leo.20180902120523.10">## 2019 Spring協同產品設計實習
 
-### KMOLab
+### BG1
 
 &lt;small&gt;
-Created by [2019cdb Group1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
+Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 &lt;/small&gt;
 
-[CMSimfly Website](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1)
+[BG1網誌](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1/blog/)
 
 
 </t>
@@ -69,16 +96,10 @@ Created by [2019cdb Group1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
+<t tx="leo.20180902120523.12"># Week7
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-</t>
+* 清明節
+* 增設老師所要求的期中內容</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -241,7 +262,131 @@ CMSimfly 網際內容管理
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
+<t tx="leo.20180902120523.9">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
+&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
+&lt;leo_header file_format="2"/&gt;
+&lt;vnodes&gt;
+&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
+&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
+&lt;/v&gt;
+&lt;/vnodes&gt;
+&lt;tnodes&gt;
+&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
+    &amp;lt;script type="text/template"&amp;gt;
+@others
+    &amp;lt;/script&amp;gt;
+&amp;lt;/section&amp;gt;
+
+
+						
+&lt;/t&gt;
+&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
+&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
+&lt;leo_header file_format="2"/&gt;
+&lt;vnodes&gt;
+&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
+&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
+&lt;/v&gt;
+&lt;/vnodes&gt;
+&lt;tnodes&gt;
+&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
+    &amp;lt;script type="text/template"&amp;gt;
+@others
+    &amp;lt;/script&amp;gt;
+&amp;lt;/section&amp;gt;
+
+
+						
+&lt;/t&gt;
+&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
+&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
+&lt;leo_header file_format="2"/&gt;
+&lt;vnodes&gt;
+&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
+&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
+&lt;/v&gt;
+&lt;/vnodes&gt;
+&lt;tnodes&gt;
+&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
+    &amp;lt;script type="text/template"&amp;gt;
+@others
+    &amp;lt;/script&amp;gt;
+&amp;lt;/section&amp;gt;
+
+
+						
+&lt;/t&gt;
+&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
+&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
+&lt;leo_header file_format="2"/&gt;
+&lt;vnodes&gt;
+&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
+&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
+&lt;/v&gt;
+&lt;/vnodes&gt;
+&lt;tnodes&gt;
+&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
+    &amp;lt;script type="text/template"&amp;gt;
+@others
+    &amp;lt;/script&amp;gt;
+&amp;lt;/section&amp;gt;
+
+
+						
+&lt;/t&gt;
+&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -326,5 +471,142 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20190418173439.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173439.2"># 任務分配
+
+* Onshape:
+40623206、40623240
+* V-rep模擬:
+40623203、40623228、40623233
+* 網站維護:
+40623245、40623222
+* Blog:
+40623221、40623216
+* Slideshow:
+40623212、40623211
+* Report:
+40623211
+
+</t>
+<t tx="leo.20190418173444.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173444.2"># Week1-Week2
+* 從有限的網路資源下建立屬於自己的可攜系統
+* 因為第二週彈性放假，所以課程改至第一週星期五晚上6:30~9:50
+
+</t>
+<t tx="leo.20190418173446.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173446.2"># Week3
+
+* 學習如何使用ungit進行commit(可輸入中文)，且如何將不需要的commit撤除</t>
+<t tx="leo.20190418173447.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173447.2"># Week4
+
+* 第一階段手足球協同實習分組名單確認
+* 各組組長建立小組倉儲，且在組別倉儲增加README.md檔</t>
+<t tx="leo.20190418173447.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173447.4"># Week5
+
+* Onshape繪製手足球模型
+* 使用V-rep進行老師要求的[bubbleRob]練習(http://mde.tw/cd2019/content/BubbleRob1.html)</t>
+<t tx="leo.20190418173448.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418173448.2"># Week6
+
+* 網站新增V-rep的操作過程
+* bubbleRob模擬結束</t>
+<t tx="leo.20190418175950.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418175950.2"># Week8
+
+* V-rep模擬，進行[實習任務三](http://mde.tw/cd2019/content/%E5%AF%A6%E7%BF%92%E4%BB%BB%E5%8B%99%E4%B8%89.html)</t>
+<t tx="leo.20190418175950.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418175950.4"># Week9
+* 期中考
+* 學員期中報告影片錄製
+* 影片標題與說明
+* 學員填寫自評表單
+* 個人期中報告影片嵌入小組網頁
+* 學員口頭期中報告</t>
+<t tx="leo.20190418180442.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190418180442.2"># 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+</t>
 </tnodes>
 </leo_file>
