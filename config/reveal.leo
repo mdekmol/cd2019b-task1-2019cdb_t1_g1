@@ -237,39 +237,11 @@ CMSimfly 網際內容管理
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;!-- Created by Leo: http://leoeditor.com/leo_toc.html --&gt;
-&lt;leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" &gt;
-&lt;leo_header file_format="2"/&gt;
-&lt;vnodes&gt;
-&lt;v t="leo.20180902120523.11"&gt;&lt;vh&gt;快捷鍵&lt;/vh&gt;
-&lt;v t="leo.20180902120523.12"&gt;&lt;vh&gt;投影片快捷鍵&lt;/vh&gt;&lt;/v&gt;
-&lt;/v&gt;
-&lt;/vnodes&gt;
-&lt;tnodes&gt;
-&lt;t tx="leo.20180902120523.11"&gt;&amp;lt;section data-markdown&amp;gt;
-    &amp;lt;script type="text/template"&amp;gt;
+<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
 @others
-    &amp;lt;/script&amp;gt;
-&amp;lt;/section&amp;gt;
-
-
-						
-&lt;/t&gt;
-&lt;t tx="leo.20180902120523.12"&gt;# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-&lt;/t&gt;
-&lt;/tnodes&gt;
-&lt;/leo_file&gt;
-
-
+    &lt;/script&gt;
+&lt;/section&gt;
 
 						
 </t>
