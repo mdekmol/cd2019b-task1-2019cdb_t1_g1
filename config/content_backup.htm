@@ -255,15 +255,223 @@
 <p>3. Double-click the little script icon that appeared next to bubbleRob's name in the scene hierarchy</p>
 <p>4. Copy and paste following code into the script editor</p>
 <p><img alt="" height="429" src="/images/p37_23-34-40.png" width="800"/></p>
-<p>Finish</p>
-<h2>Table Football</h2>
+<p><strong>BubbleRob Program：</strong></p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init()
+    -- do some initialization here:
+
+    -- Make sure you read the section on "Accessing general-type objects programmatically"
+    -- For instance, if you wish to retrieve the handle of a scene object, use following instruction:
+    --
+    -- handle=sim.getObjectHandle('sceneObjectName')
+    -- 
+    -- Above instruction retrieves the handle of 'sceneObjectName' if this script's name has no '#' in it
+    --
+    -- If this script's name contains a '#' (e.g. 'someName#4'), then above instruction retrieves the handle of object 'sceneObjectName#4'
+    -- This mechanism of handle retrieval is very convenient, since you don't need to adjust any code when a model is duplicated!
+    -- So if the script's name (or rather the name of the object associated with this script) is:
+    --
+    -- 'someName', then the handle of 'sceneObjectName' is retrieved
+    -- 'someName#0', then the handle of 'sceneObjectName#0' is retrieved
+    -- 'someName#1', then the handle of 'sceneObjectName#1' is retrieved
+    -- ...
+    --
+    -- If you always want to retrieve the same object's handle, no matter what, specify its full name, including a '#':
+    --
+    -- handle=sim.getObjectHandle('sceneObjectName#') always retrieves the handle of object 'sceneObjectName' 
+    -- handle=sim.getObjectHandle('sceneObjectName#0') always retrieves the handle of object 'sceneObjectName#0' 
+    -- handle=sim.getObjectHandle('sceneObjectName#1') always retrieves the handle of object 'sceneObjectName#1'
+    -- ...
+    --
+    -- Refer also to sim.getCollisionhandle, sim.getDistanceHandle, sim.getIkGroupHandle, etc.
+end
+
+function sysCall_actuation()
+    -- put your actuation code here
+    --
+    -- For example:
+    --
+    -- local position=sim.getObjectPosition(handle,-1)
+    -- position[1]=position[1]+0.001
+    -- sim.setObjectPosition(handle,-1,position)
+end
+
+function sysCall_sensing()
+    -- put your sensing code here
+end
+
+function sysCall_cleanup()
+    -- do some clean-up here
+end
+
+-- You can define additional system calls here:
+--[[
+function sysCall_suspend()
+end
+
+function sysCall_resume()
+end
+
+function sysCall_dynCallback(inData)
+end
+
+function sysCall_jointCallback(inData)
+    return outData
+end
+
+function sysCall_contactCallback(inData)
+    return outData
+end
+
+function sysCall_beforeCopy(inData)
+    for key,value in pairs(inData.objectHandles) do
+        print("Object with handle "..key.." will be copied")
+    end
+end
+
+function sysCall_afterCopy(inData)
+    for key,value in pairs(inData.objectHandles) do
+        print("Object with handle "..key.." was copied")
+    end
+end
+
+function sysCall_beforeDelete(inData)
+    for key,value in pairs(inData.objectHandles) do
+        print("Object with handle "..key.." will be deleted")
+    end
+    -- inData.allObjects indicates if all objects in the scene will be deleted
+end
+
+function sysCall_afterDelete(inData)
+    for key,value in pairs(inData.objectHandles) do
+        print("Object with handle "..key.." was deleted")
+    end
+    -- inData.allObjects indicates if all objects in the scene were deleted
+end
+--]]
+function speedChange_callback(ui,id,newVal)
+    speed=minMaxSpeed[1]+(minMaxSpeed[2]-minMaxSpeed[1])*newVal/100
+end
+
+function sysCall_init()
+    -- This is executed exactly once, the first time this script is executed
+    bubbleRobBase=sim.getObjectAssociatedWithScript(sim.handle_self) -- this is bubbleRob's handle
+    leftMotor=sim.getObjectHandle("bubbleRob_leftMotor") -- Handle of the left motor
+    rightMotor=sim.getObjectHandle("bubbleRob_rightMotor") -- Handle of the right motor
+    noseSensor=sim.getObjectHandle("bubbleRob_sensingNose") -- Handle of the proximity sensor
+    minMaxSpeed={-50*math.pi/180,300*math.pi/180} -- Min and max speeds for each motor
+    backUntilTime=1 -- Tells whether bubbleRob is in forward or backward mode
+    -- Create the custom UI:
+        xml = '&lt;ui title="'..sim.getObjectName(bubbleRobBase)..' speed" closeable="false" resizeable="false" activate="false"&gt;'..[[
+        &lt;hslider minimum="0" maximum="100" onchange="speedChange_callback" id="1"/&gt;
+        &lt;label text="" style="* {margin-left: 300px;}"/&gt;
+        &lt;/ui&gt;
+        ]]
+    ui=simUI.create(xml)
+    speed=(minMaxSpeed[1]+minMaxSpeed[2])*0.5
+    simUI.setSliderValue(ui,1,100*(speed-minMaxSpeed[1])/(minMaxSpeed[2]-minMaxSpeed[1]))
+end
+
+function sysCall_actuation()
+    result=sim.readProximitySensor(noseSensor) -- Read the proximity sensor
+    -- If we detected something, we set the backward mode:
+    if (result&gt;0) then backUntilTime=sim.getSimulationTime()+4 end 
+
+    if (backUntilTime&lt;sim.getSimulationTime()) then
+        -- When in forward mode, we simply move forward at the desired speed
+        sim.setJointTargetVelocity(leftMotor,-speed)
+        sim.setJointTargetVelocity(rightMotor,-speed)
+    else
+        -- When in backward mode, we simply backup in a curve at reduced speed
+        sim.setJointTargetVelocity(leftMotor,speed/2)
+        sim.setJointTargetVelocity(rightMotor,speed/8)
+    end
+end
+
+function sysCall_cleanup()
+	simUI.destroy(ui)
+end</pre>
+<p>Finish</p><h2>Table Football</h2>
 <h3>Left player</h3>
 <p><a href="https://cad.onshape.com/documents/a564b6899dcac55feafae116/w/73525c941b75d6a0b3f60466/e/8df7f6819ca4cfff440c4e54">Onshape</a></p>
 <p class="title style-scope ytd-video-primary-info-renderer"><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">Foosball：left player simulation</yt-formatted-string></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/0rHK7NbG45s" width="560"></iframe></p>
+<p><strong>Left Player Program：</strong></p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- model in Solvespace 500 mm = 5000 mm in V-rep
+--[[
+Simulation is 10 times of realistic environment
+floor in Solvespace 2.5 m x 2.5 m = 25 m x 25 m in V-rep
+ball is in Solivespace 1g (0.001) = 0.01 kg in V-rep
+hammer is in Solvespace 0.1 kg (100g) = 1kg in V-rep (0.1 for Inertia)
+]]
+
+threadFunction=function()
+    while sim.getSimulationState()~=sim.simulation_advancing_abouttostop do
+        -- Read the keyboard messages (make sure the focus is on the main window, scene view):
+        message,auxiliaryData=sim.getSimulatorMessage()
+        while message~=-1 do
+            if (message==sim.message_keypress) then
+                if (auxiliaryData[1]==119) then
+                    -- up key
+                    velocity=100
+                    torque=200
+                    hammer_back = 0
+                end
+                if (auxiliaryData[1]==115) then
+                    -- down key
+                     hammer_back = 1
+                     torque=-200
+                     velocity = -100
+                end
+                if (auxiliaryData[1]==97) then
+                    -- right key
+                     sliding = sliding + 0.005
+sim.addStatusbarMessage('sliding:'..sliding)
+                
+                end
+                if (auxiliaryData[1]==100) then
+                    -- left key
+                     sliding = sliding - 0.005
+sim.addStatusbarMessage('sliding:'..sliding)
+                end
+            end
+            message,auxiliaryData=sim.getSimulatorMessage()
+        end
+ 
+        -- We take care of setting the desired hammer position:
+        if hammer_back == 1
+            then 
+               sim.setJointPosition(joint, -1, orientation)
+               --sim.setObjectPosition(hammer, -1, position)
+        end
+        sim.setJointTargetPosition(joint, velocity)
+        --sim.setJointForce(joint,torque)
+        sim.setJointTargetPosition(slider, sliding)
+
+        -- Since this script is threaded, don't waste time here:
+        sim.switchThread() -- Resume the script at next simulation loop start
+    end
+end
+-- Put some initialization code here:
+-- Retrieving of some handles and setting of some initial values:
+joint=sim.getObjectHandle('left_joint')
+hammer=sim.getObjectHandle('left_player')
+slider=sim.getObjectHandle("left_slider")
+velocity=0
+hammer_back=0
+torque=0
+sliding = 0
+orientation=sim.getJointPosition(joint, -1)
+position=sim.getObjectPosition(hammer, -1)
+slider_position=sim.getJointPosition(slider, -1)
+-- Here we execute the regular thread code:
+res,err=xpcall(threadFunction,function(err) return debug.traceback(err) end)
+if not res then
+    sim.addStatusbarMessage('Lua runtime error: '..err)
+end
+ 
+-- Put some clean-up code here:</pre>
 <p>Foosball：left player finish simulation</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/GkIYR4ygDyE" width="560"></iframe></p>
-<h1>Progress</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/GkIYR4ygDyE" width="560"></iframe></p><h1>Progress</h1>
 <h2>03</h2>
 <table border="1" style="width: 700px; border-color: #8cb6ed; height: 0px;">
 <tbody>
@@ -339,7 +547,7 @@
 <td style="width: 127.2px; text-align: center;"><span>week9</span></td>
 <td style="width: 394.8px;">
 <ul>
-<li>Mid - term Report</li>
+<li><a href="https://www.youtube.com/watch?v=op4bcTuSpCU">Mid - term Report</a></li>
 </ul>
 </td>
 </tr>
@@ -348,13 +556,14 @@
 <td style="width: 394.8px;">
 <ul>
 <li>Research foosball simulation</li>
-<li><span>Foosball：left player</span></li>
+<li><span>Foosball：<a href="https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1/content/Left%20player.html">left player</a></span></li>
+<li><span>Video：<a href="https://www.youtube.com/watch?v=0rHK7NbG45s">left player</a></span></li>
+<li><span>Video：<a href="https://www.youtube.com/watch?v=GkIYR4ygDyE">left player finish</a></span><span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
-</table>
-<h2>06</h2>
+</table><h2>06</h2>
 <table border="1" style="width: 500.2px; border-color: #8cb6ed;">
 <tbody>
 <tr>
@@ -423,14 +632,20 @@
 <h2>40623203</h2>
 <p><strong>week1</strong></p>
 <p><strong>week2</strong></p>
+<p><span>228 Peace Memorial Day</span></p>
+<p><strong><img caption="false" height="375" src="/images/228和平紀念日.jpg" width="500"/></strong></p>
+<p><a href="https://www.bloggerads.net/Case/Info/6335">出處</a></p>
 <p><strong>week3</strong></p>
 <p><strong>week4</strong></p>
 <p><strong>week5</strong></p>
 <p><strong>week6</strong></p>
 <p><strong>week7</strong></p>
+<p><span>Tomb Sweeping Day</span></p>
+<p><strong><img caption="false" height="403" src="/images/清明.JPG" width="500"/></strong></p>
+<p><img caption="false" height="354" src="/images/清明1.JPG" width="500"/></p>
+<p><a href="https://www.google.com/search?biw=1536&amp;bih=674&amp;tbm=isch&amp;sa=1&amp;ei=PvbKXInwEZCmmAXxl5qADg&amp;q=%E6%B8%85%E6%98%8E%E7%AF%80&amp;oq=%E6%B8%85&amp;gs_l=img.1.0.0l10.117480.120412..122837...0.0..0.341.837.10j3-1......0....1..gws-wiz-img.....0..0i24.c8RrKaPr8D4#imgdii=MVb59bnUhP70iM:&amp;imgrc=0KuhCks-RQd-mM:">出處</a></p>
 <p><strong>week8</strong></p>
-<p><strong>week9</strong></p>
-<h2>40623206</h2>
+<p><strong>week9</strong></p><h2>40623206</h2>
 <p><strong>week1</strong></p>
 <p>用了很久的可攜式系統在這學期要自己創建，體驗如何製作一個可攜式系統，跟著老師的步驟做，一步一步的去拼湊它，才發現它需要下載很多程式，再慢慢的連結各項功能，建立出屬於自己的開發環境，使它可以幫助自己完成這學期的工作</p>
 <p><strong>week2</strong></p>
@@ -455,7 +670,9 @@
 <p><img alt="" height="376" src="/images/2019-04-13_21-15-47.gif" width="700"/></p>
 <p><a href="https://www.youtube.com/watch?v=ax8SLag4f-U">BubbleRob tutorial</a></p>
 <p><strong>week9</strong></p>
-<p>期中打自評成績，並報告第一週到第八週所作內容</p><h2>40623211</h2>
+<p>期中打自評成績，並報告第一週到第八週所作內容</p>
+<p><strong>week10</strong></p>
+<p>這週我開始模擬新的tutorial，也找不太到這個的重點，做了前面的一些些，原本一直失敗，後來才發現功能都是分開的，彼此之間沒有關聯，一開始以為可以直接在V-rep叫零件，可能可以只是還沒找到，所以在Onshape畫一個類似的零組件去模擬，希望後面可以把它完成</p><h2>40623211</h2>
 <p><strong>week1</strong></p>
 <p>第一週是把自隨身碟製作一個可攜式系統，並且下載很多程式來方便本學期上課用，之後慢慢整理出自己的環境。</p>
 <p><strong>week2</strong></p>
