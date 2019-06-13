@@ -26,7 +26,8 @@
 </v>
 <v t="leo.20190418185600.1" a="E"><vh>工作</vh>
 <v t="leo.20190418173439.2"><vh>任務</vh></v>
-<v t="leo.20190613102318.1"><vh>任務</vh></v>
+<v t="leo.20190613102318.1"><vh>ONSHAPE</vh></v>
+<v t="leo.20190613155816.1"><vh>V-rep</vh></v>
 </v>
 <v t="leo.20190418180442.1" a="E"><vh>快捷鍵</vh>
 <v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
@@ -354,6 +355,16 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190613102318.1"></t>
+<t tx="leo.20190613102318.1">[手足球+送球機構的完成圖](https://cad.onshape.com/documents/fcd2ce4571d668249938c4fb/w/f8cf7d2aff1a9bbd00da57c4/e/8ed15db245d28cf2aa49ffb2)
+[操作桿尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/dfea3cfcbfd14803555ea587)
+[握把尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/adbe6de668cc33c0ef63ead9)
+[球員尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/1b2291c268d8828737c1754e)
+[進球區尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/28ae8a75d5ffe68cd8521686)
+[球場邊界](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/85005b7341024c67868ab79c)
+[場地](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/9bc721c57da73b9de65aa09d)</t>
+<t tx="leo.20190613155816.1">#V-rep模擬
+
+
+</t>
 </tnodes>
 </leo_file>
