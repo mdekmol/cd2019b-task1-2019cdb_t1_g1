@@ -33,17 +33,23 @@
 </v>
 </v>
 </v>
+<v t="leo.20190614002159.1"><vh>繪圖</vh>
+<v t="leo.20190614002159.2"><vh>ONSHAPE</vh></v>
+</v>
+<v t="leo.20190614002430.1" a="E"><vh>模擬</vh>
+<v t="leo.20190614002430.2"><vh>V-rep</vh></v>
+</v>
 <v t="leo.20190418180442.1" a="E"><vh>快捷鍵</vh>
 <v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.13" a="E"><vh>各式內容引用範例</vh>
+<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -389,6 +395,41 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 						
 </t>
 <t tx="leo.20190613223839.4"># V-rep模擬
+
+[Foosball](https://github.com/40623203/40623203_cd2019b/tree/gh-pages/downloads)
+[Foosball people vs people](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/foosball%20people%20vs%20people)
+[Foosball people vs ai](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/Foosball%20people%20vs%20ai)
+</t>
+<t tx="leo.20190614002159.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190614002159.2"># Onshape
+
+[手足球+送球機構的完成圖](https://cad.onshape.com/documents/fcd2ce4571d668249938c4fb/w/f8cf7d2aff1a9bbd00da57c4/e/8ed15db245d28cf2aa49ffb2)
+[操作桿尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/dfea3cfcbfd14803555ea587)
+[握把尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/adbe6de668cc33c0ef63ead9)
+[球員尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/1b2291c268d8828737c1754e)
+[進球區尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/28ae8a75d5ffe68cd8521686)
+[球場邊界](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/85005b7341024c67868ab79c)
+[場地](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/9bc721c57da73b9de65aa09d)
+
+</t>
+<t tx="leo.20190614002430.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190614002430.2"># V-rep模擬
 
 [Foosball](https://github.com/40623203/40623203_cd2019b/tree/gh-pages/downloads)
 [Foosball people vs people](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/foosball%20people%20vs%20people)
