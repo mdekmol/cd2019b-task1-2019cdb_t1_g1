@@ -26,8 +26,12 @@
 </v>
 <v t="leo.20190418185600.1" a="E"><vh>工作</vh>
 <v t="leo.20190418173439.2"><vh>任務</vh></v>
-<v t="leo.20190613102318.1"><vh>ONSHAPE</vh></v>
-<v t="leo.20190613155816.1"><vh>V-rep</vh></v>
+<v t="leo.20190613223832.1" a="E"><vh>繪圖</vh>
+<v t="leo.20190613223832.3"><vh>ONSHAPE</vh></v>
+<v t="leo.20190613223839.1" a="E"><vh>模擬</vh>
+<v t="leo.20190613223839.4"><vh>V-rep</vh></v>
+</v>
+</v>
 </v>
 <v t="leo.20190418180442.1" a="E"><vh>快捷鍵</vh>
 <v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
@@ -355,7 +359,16 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190613102318.1"># Onshape
+<t tx="leo.20190613223832.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190613223832.3"># Onshape
 
 [手足球+送球機構的完成圖](https://cad.onshape.com/documents/fcd2ce4571d668249938c4fb/w/f8cf7d2aff1a9bbd00da57c4/e/8ed15db245d28cf2aa49ffb2)
 [操作桿尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/dfea3cfcbfd14803555ea587)
@@ -366,9 +379,20 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 [場地](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/9bc721c57da73b9de65aa09d)
 
 </t>
-<t tx="leo.20190613155816.1"># V-rep模擬
+<t tx="leo.20190613223839.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
 
 
+						
+</t>
+<t tx="leo.20190613223839.4"># V-rep模擬
+
+[Foosball](https://github.com/40623203/40623203_cd2019b/tree/gh-pages/downloads)
+[Foosball people vs people](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/foosball%20people%20vs%20people)
+[Foosball people vs ai](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/Foosball%20people%20vs%20ai)
 </t>
 </tnodes>
 </leo_file>
