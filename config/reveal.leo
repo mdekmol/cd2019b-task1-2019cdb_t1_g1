@@ -26,42 +26,30 @@
 </v>
 <v t="leo.20190418185600.1" a="E"><vh>工作</vh>
 <v t="leo.20190418173439.2"><vh>任務</vh></v>
+<v t="leo.20190613223832.1" a="E"><vh>繪圖</vh>
+<v t="leo.20190613223832.3"><vh>ONSHAPE</vh></v>
+<v t="leo.20190613223839.1" a="E"><vh>模擬</vh>
+<v t="leo.20190613223839.4"><vh>V-rep</vh></v>
 </v>
-<v t="leo.20190418185634.1" a="E"><vh>W1-2</vh>
-<v t="leo.20190418173444.2"><vh>W1-W2課程</vh></v>
 </v>
-<v t="leo.20190418185636.1" a="E"><vh>W3</vh>
-<v t="leo.20190418173446.2"><vh>W3課程</vh></v>
 </v>
-<v t="leo.20190418185637.1" a="E"><vh>W4</vh>
-<v t="leo.20190418173447.2"><vh>W4課程</vh></v>
+<v t="leo.20190614002159.1"><vh>繪圖</vh>
+<v t="leo.20190614002159.2"><vh>ONSHAPE</vh></v>
 </v>
-<v t="leo.20190418185639.1" a="E"><vh>W5</vh>
-<v t="leo.20190418173447.4"><vh>W5課程</vh></v>
-</v>
-<v t="leo.20190418185641.1" a="E"><vh>W6</vh>
-<v t="leo.20190418173448.2"><vh>W6課程</vh></v>
-</v>
-<v t="leo.20190418185642.1" a="E"><vh>W7</vh>
-<v t="leo.20180902120523.12"><vh>W7課程</vh></v>
-</v>
-<v t="leo.20190418185643.1" a="E"><vh>W8</vh>
-<v t="leo.20190418175950.2"><vh>W8課程</vh></v>
-</v>
-<v t="leo.20190418185643.3" a="E"><vh>W9</vh>
-<v t="leo.20190418175950.4"><vh>W9課程</vh></v>
+<v t="leo.20190614002430.1" a="E"><vh>模擬</vh>
+<v t="leo.20190614002430.2"><vh>V-rep</vh></v>
 </v>
 <v t="leo.20190418180442.1" a="E"><vh>快捷鍵</vh>
 <v t="leo.20190418180442.2"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.13" a="E"><vh>各式內容引用範例</vh>
+<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -75,12 +63,6 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.12"># Week7
-
-* 清明節
-* 增設老師所要求的期中內容
-
-</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -321,61 +303,18 @@ QLineEdit#editorLabel {
 vertical: body pane on the botton</t>
 <t tx="leo.20190418173439.2"># 任務分配
 
-* Onshape:
-40623206、40623240
 * V-rep模擬:
 40623203、40623228、40623233
-* 網站維護:
-40623245、40623222
-* Blog:
-40623221、40623216
-* Slideshow:
-40623212、40623211
-* Report:
-40623211
+*投影片:
+40623221
+*繪圖:
+40623206
+*工程圖:
+40623216、40623211、40623245
+*零件表、尺寸分析:
+40623212、40623222
+pdf報告:40623240、40623245
 
-</t>
-<t tx="leo.20190418173444.2"># Week1-Week2
-
-* 從有限的網路資源下建立屬於自己的可攜系統
-* 因為第二週彈性放假，所以課程改至第一週星期五晚上6:30~9:50
-
-</t>
-<t tx="leo.20190418173446.2"># Week3
-
-* 學習如何使用ungit進行commit(可輸入中文)，且如何將不需要的commit撤除
-
-</t>
-<t tx="leo.20190418173447.2"># Week4
-
-* 第一階段手足球協同實習分組名單確認
-* 各組組長建立小組倉儲，且在組別倉儲增加README.md檔
-
-</t>
-<t tx="leo.20190418173447.4"># Week5
-
-* Onshape繪製手足球模型
-* 使用V-rep進行老師要求的[bubbleRob]練習(http://mde.tw/cd2019/content/BubbleRob1.html)
-
-</t>
-<t tx="leo.20190418173448.2"># Week6
-
-* 網站新增V-rep的操作過程
-* bubbleRob模擬結束
-
-</t>
-<t tx="leo.20190418175950.2"># Week8
-
-* V-rep模擬，進行[實習任務三](http://mde.tw/cd2019/content/%E5%AF%A6%E7%BF%92%E4%BB%BB%E5%8B%99%E4%B8%89.html)
-
-</t>
-<t tx="leo.20190418175950.4"># Week9
-* 期中考
-* 學員期中報告影片錄製
-* 影片標題與說明
-* 學員填寫自評表單
-* 個人期中報告影片嵌入小組網頁
-* 學員口頭期中報告
 
 </t>
 <t tx="leo.20190418180442.1">&lt;section data-markdown&gt;
@@ -426,7 +365,7 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190418185634.1">&lt;section data-markdown&gt;
+<t tx="leo.20190613223832.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -435,7 +374,18 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190418185636.1">&lt;section data-markdown&gt;
+<t tx="leo.20190613223832.3"># Onshape
+
+[手足球+送球機構的完成圖](https://cad.onshape.com/documents/fcd2ce4571d668249938c4fb/w/f8cf7d2aff1a9bbd00da57c4/e/8ed15db245d28cf2aa49ffb2)
+[操作桿尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/dfea3cfcbfd14803555ea587)
+[握把尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/adbe6de668cc33c0ef63ead9)
+[球員尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/1b2291c268d8828737c1754e)
+[進球區尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/28ae8a75d5ffe68cd8521686)
+[球場邊界](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/85005b7341024c67868ab79c)
+[場地](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/9bc721c57da73b9de65aa09d)
+
+</t>
+<t tx="leo.20190613223839.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -444,7 +394,13 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190418185637.1">&lt;section data-markdown&gt;
+<t tx="leo.20190613223839.4"># V-rep模擬
+
+[Foosball](https://github.com/40623203/40623203_cd2019b/tree/gh-pages/downloads)
+[Foosball people vs people](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/foosball%20people%20vs%20people)
+[Foosball people vs ai](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/Foosball%20people%20vs%20ai)
+</t>
+<t tx="leo.20190614002159.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -453,7 +409,18 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190418185639.1">&lt;section data-markdown&gt;
+<t tx="leo.20190614002159.2"># Onshape
+
+[手足球+送球機構的完成圖](https://cad.onshape.com/documents/fcd2ce4571d668249938c4fb/w/f8cf7d2aff1a9bbd00da57c4/e/8ed15db245d28cf2aa49ffb2)
+[操作桿尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/dfea3cfcbfd14803555ea587)
+[握把尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/adbe6de668cc33c0ef63ead9)
+[球員尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/1b2291c268d8828737c1754e)
+[進球區尺寸](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/28ae8a75d5ffe68cd8521686)
+[球場邊界](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/85005b7341024c67868ab79c)
+[場地](https://cad.onshape.com/documents/70ae09b84ba72fe5c5ef14ab/w/613d8349b354bd768b830627/e/9bc721c57da73b9de65aa09d)
+
+</t>
+<t tx="leo.20190614002430.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -462,41 +429,11 @@ Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
 
 						
 </t>
-<t tx="leo.20190418185641.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
+<t tx="leo.20190614002430.2"># V-rep模擬
 
-
-						
-</t>
-<t tx="leo.20190418185642.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20190418185643.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20190418185643.3">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
+[Foosball](https://github.com/40623203/40623203_cd2019b/tree/gh-pages/downloads)
+[Foosball people vs people](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/foosball%20people%20vs%20people)
+[Foosball people vs ai](https://github.com/mdecadp2018/site-40623233/tree/gh-pages/foosball/Foosball%20people%20vs%20ai)
 </t>
 </tnodes>
 </leo_file>
